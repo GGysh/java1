@@ -11,20 +11,69 @@ package person;
  */
 public class Person {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        int age; 
-        age = 14;
-    System.out.println(age);
-        double height = 1.67;
-    System.out.println(height);    
-        String name = "George";
-        String lastname = "Yang";
-    System.out.println("My name is" + name + "SH" + lastname);
-    boolean SH = true; 
-    boolean shy = false; 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+    int age;
+    double height;
+    String name;
+    String lastName;
+    String phoneNumber;
+    
+    
+    
+    public Person(int a, double h, String n, String la, String ph){
+    age = a;
+    height = h;
+    name = n;
+    lastName = la;
+    phoneNumber = ph;
+    }
+   
+}
+
+     class phoneBook{
+     Person[] list;
+     int size;
+     
+    
     }
     
-}
+
+

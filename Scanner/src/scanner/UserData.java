@@ -30,16 +30,20 @@ public class UserData {
         String year = keyboard.nextLine();
         System.out.println(year + day + month );
         System.out.println("what is ur favorite book?");
-        System.out.println(keyboard.nextLine());
+        String book = keyboard.nextLine();
         System.out.println("NC , You know what , i love 1984");
         System.out.println("what about your hometown , where it is?");
-        int c = Integer.parseInt(keyboard.nextLine());
+        String hometown = keyboard.nextLine();
         System.out.println("alright,alright my hometown is GZ, HAHA , "
                 + "any lucky numbers ");
         int b = Integer.parseInt(keyboard.nextLine());
         System.out.println("what about shoes size?");
-        double d = Double.parsedouble.e());
-        
+        double d = Double.parseDouble(keyboard.nextLine());
+        System.out.println("How excited you are to learn java?(1 to 5)");
+        double e = Double.parseDouble(keyboard.nextLine());
+        System.out.println("one fact about you");
+        String fact = keyboard.nextLine();
+        System.out.println(name,"age" a , day + month + year, "favorite book is"book, c, b, d, e, fact");
         
         
                 
