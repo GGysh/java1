@@ -55,25 +55,14 @@ public class Person {
     String name;
     String lastName;
     String phoneNumber;
-    
-    
-    
-    public Person(int a, double h, String n, String la, String ph){
-    age = a;
-    height = h;
-    name = n;
-    lastName = la;
-    phoneNumber = ph;
-    }
-   
-}
 
-     class phoneBook{
-     Person[] list;
-     int size;
-     
-    
+    public Person(String n, String la, String ph) {
+        
+        name = n;
+        lastName = la;
+        phoneNumber = ph;
     }
-    
+
+}
 
 
