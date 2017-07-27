@@ -34,7 +34,7 @@ public class Repeater {
             int guess = Integer.parseInt(keyboard.nextLine());
             System.out.println(guess);
             if (guess == d) {
-                System.out.println("nice job man , congraduation ");
+                System.out.println("nice job man , congradulation ");
             } else {
                 System.out.println("lol,u suck at this");
             }

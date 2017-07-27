@@ -49,7 +49,13 @@ public class SearchList {
        System.out.println(mN);
        
        ArrayList s = new ArrayList();
-       s.add("A"); s.add("bunch"); s.add("of"); s.add("
+       s.add("A"); s.add("bunch"); s.add("of"); s.add("revolutionary"); s.add("manumission"); s.add("abolitionists"); 
+       s.add("give me "); s.add("your position"); s.add("show me"); s.add("where"); s.add("the"); s.add("ammunition"); s.add("is!");
+       System.out.println(s);
+       
+       
+       
+       
     }   
                
                
