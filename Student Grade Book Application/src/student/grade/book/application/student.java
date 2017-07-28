@@ -14,6 +14,7 @@ import java.util.ArrayList;
 class student {
     String name;
     ArrayList<Integer> grades;
+    
     ArrayList<Double> average;
     
     public student (String n) {
@@ -28,9 +29,18 @@ class student {
         for (int i : grades) {
             System.out.print(i + " ");
         }
-        System.out.println("Arrage: "); 
+        System.out.println("\nAverage: "); 
         
-        System.out.println();
+        System.out.println(getAverage());
+    }
+    
+    public double getAverage(){
+        double avg=0;
+        for ( int i : grades) {
+            avg+=i;
+        }
+        avg=avg/grades.size();
+        return avg;
     }
     
     

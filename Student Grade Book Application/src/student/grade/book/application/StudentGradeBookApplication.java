@@ -29,18 +29,24 @@ public class StudentGradeBookApplication {
             student s = new student(name);
             System.out.println("Type grades, then type Quit when done");
             String g = keyboard.nextLine();
-            while (!g.equals("Quit")) {
+            while (!g.equals("quit")) {
                 int grade = Integer.parseInt(g);
                 s.grades.add(grade);
                 g = keyboard.nextLine();
+                 
+               
             }
             students.add(s);
         }
-        
+        double classAvg=0;
         for (student s : students) {
             s.printStudent();
+            classAvg+=s.getAverage();
+            
         }
-
+        classAvg/=students.size();
+        System.out.println("Class Average: "+ classAvg);
+        
        
     }
 
