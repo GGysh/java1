@@ -27,27 +27,35 @@ public class StudentGradeBookApplication {
             System.out.println("what is the name of the student?");
             String name = keyboard.nextLine();
             student s = new student(name);
-            System.out.println("Type grades, then type Quit when done");
+            System.out.println("Type grades, then type quit when done");
             String g = keyboard.nextLine();
             while (!g.equals("quit")) {
                 int grade = Integer.parseInt(g);
                 s.grades.add(grade);
                 g = keyboard.nextLine();
-                 
-               
             }
+           System.out.println("Type assignment,than type done when done");
+           String ss = keyboard.nextLine();
+                while (!ss.equals("done")) {
+                    double assignment = Double.parseDouble(ss);
+                    s.assignment.add(assignment);
+                    ss = keyboard.nextLine();
+
+                }
+
+            
             students.add(s);
         }
-        double classAvg=0;
+        
+        double classAvg = 0;
         for (student s : students) {
             s.printStudent();
-            classAvg+=s.getAverage();
-            
+            classAvg += s.getTotalAverage();
+
         }
-        classAvg/=students.size();
-        System.out.println("Class Average: "+ classAvg);
-        
-       
+        classAvg /= students.size();
+        System.out.println("Class Average: " + classAvg);
+
     }
 
 }
